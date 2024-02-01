@@ -1,39 +1,40 @@
-interface Fantasma {
-    pruebas: string[];
+interface Ghost {
+    evidences: string[];
 }
 
-interface Fantasmas {
-    [nombre: string]: Fantasma;
+interface Ghosts {
+    [nombre: string]: Ghost;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const ghostForm = document.getElementById('ghostForm') as HTMLFormElement;
-    const listadoFantasmas = document.getElementById('listadoFantasmas') as HTMLDivElement;
+    const ghostList = document.getElementById('ghostList') as HTMLDivElement;
 
-    fetch('fantasmas.json')
+    fetch('ghosts.json')
         .then(response => response.json())
-        .then((data: { fantasmas: Fantasmas }) => {
-            // Generar checkboxes desde las pruebas disponibles en el JSON
-            const pruebasDisponibles = new Set<string>();
-            Object.values(data.fantasmas).forEach(fantasma => {
-                fantasma.pruebas.forEach(prueba => pruebasDisponibles.add(prueba));
+        .then((data: { ghosts: Ghosts }) => {
+            // Generar checkboxes desde las evidences disponibles en el JSON
+            const availableEvidences = new Set<string>();
+            console.log(data);
+            Object.values(data.ghosts).forEach(ghost => {
+                ghost.evidences.forEach(prueba => availableEvidences.add(prueba));
             });
 
-            pruebasDisponibles.forEach(nombrePrueba => {
+            availableEvidences.forEach(evidenceName => {
                 const checkbox = document.createElement('input');
                 checkbox.type = 'checkbox';
-                checkbox.name = nombrePrueba;
+                checkbox.name = evidenceName;
                 checkbox.addEventListener('change', actualizarListado);
 
                 const label = document.createElement('label');
                 label.appendChild(checkbox);
-                label.appendChild(document.createTextNode(` ${nombrePrueba}`));
+                label.appendChild(document.createTextNode(` ${evidenceName}`));
 
                 ghostForm.appendChild(label);
             });
 
             // Mostrar todos los fantasmas inicialmente
-            listadoFantasmas.innerHTML = generarListado([], data.fantasmas);
+            ghostList.innerHTML = generarListado([], data.ghosts);
 
             function actualizarListado() {
                 const checkboxes = document.querySelectorAll<HTMLInputElement>('input[type="checkbox"]');
@@ -45,16 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                listadoFantasmas.innerHTML = generarListado(selectedTests, data.fantasmas);
+                ghostList.innerHTML = generarListado(selectedTests, data.ghosts);
             }
 
-            function generarListado(selectedTests: string[], fantasmas: Fantasmas): string {
+            function generarListado(selectedTests: string[], ghosts: Ghosts): string {
                 const resultado: string[] = [];
 
-                for (const [nombreFantasma, datosFantasma] of Object.entries(fantasmas)) {
-                    const pruebasFantasma = datosFantasma.pruebas;
+                for (const [nombreFantasma, datosFantasma] of Object.entries(ghosts)) {
+                    const evidencesFantasma = datosFantasma.evidences;
 
-                    const fantasmaVisible = selectedTests.every(test => pruebasFantasma.includes(test));
+                    const fantasmaVisible = selectedTests.every(test => evidencesFantasma.includes(test));
 
                     resultado.push(`<p style="text-decoration: ${fantasmaVisible ? 'none' : 'line-through;'}">${nombreFantasma}</p>`);
                 }
