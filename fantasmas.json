@@ -1,0 +1,14 @@
+{
+    "fantasmas": {
+      "fantasma1": {
+        "pruebas": ["EMF5", "Temperaturas heladas"]
+      },
+      "fantasma2": {
+        "pruebas": ["DOTS", "Spirit Box"]
+      },
+      "fantasma3": {
+        "pruebas": ["EMF5", "Spirit Box"]
+      }
+    }
+  }
+  
