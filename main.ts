@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ghostForm = document.getElementById('ghostForm') as HTMLFormElement;
     const ghostList = document.getElementById('ghostList') as HTMLDivElement;
 
-    fetch('ghosts.json')
+    fetch('ghosts.json?vsfsfd')
         .then(response => response.json())
         .then((data: { ghosts: Ghosts }) => {
             // Generar checkboxes desde las evidences disponibles en el JSON

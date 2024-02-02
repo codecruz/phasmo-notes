@@ -1,14 +1,158 @@
 {
-    "ghosts": {
-      "ghost1": {
-        "evidences": ["EMF5", "Temperaturas heladas"]
-      },
-      "ghost2": {
-        "evidences": ["DOTS", "Spirit Box"]
-      },
-      "ghost3": {
-        "evidences": ["EMF5", "Spirit Box"]
-      }
+  "ghosts": {
+    "Banshee": {
+      "evidences": [
+        "D.O.T.S Projector",
+        "Ghost Orb",
+        "Ultraviolet"
+      ]
+    },
+    "Demon": {
+      "evidences": [
+        "Ghost Writing",
+        "Spirit Box",
+        "Freezing Temperatures"
+      ]
+    },
+    "Deogen": {
+      "evidences": [
+        "D.O.T.S Projector",
+        "Ghost Writing",
+        "Spirit Box"
+      ]
+    },
+    "Goryo": {
+      "evidences": [
+        "D.O.T.S Projector",
+        "EMF Level 5",
+        "Ultraviolet"
+      ]
+    },
+    "Hantu": {
+      "evidences": [
+        "Ghost Orb",
+        "Ultraviolet",
+        "Freezing Temperatures"
+      ]
+    },
+    "Jinn": {
+      "evidences": [
+        "EMF Level 5",
+        "Ultraviolet",
+        "Freezing Temperatures"
+      ]
+    },
+    "Mare": {
+      "evidences": [
+        "Ghost Writing",
+        "Ultraviolet",
+        "Spirit Box"
+      ]
+    },
+    "Moroi": {
+      "evidences": [
+        "Ghost Writing",
+        "Ghost Orb",
+        "Spirit Box"
+      ]
+    },
+    "Myling": {
+      "evidences": [
+        "Ghost Writing",
+        "EMF Level 5",
+        "Ultraviolet"
+      ]
+    },
+    "Obake": {
+      "evidences": [
+        "EMF Level 5",
+        "Ghost Orb",
+        "Ultraviolet"
+      ]
+    },
+    "Oni": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Onryo": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Phantom": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Poltergeist": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Raiju": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Revenant": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Shade": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Spirit": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Thaye": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "The Mimic": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "The Twins": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Wraith": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Yokai": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
+    },
+    "Yurei": {
+      "evidences": [
+        "DOTS",
+        "Spirit Box"
+      ]
     }
   }
-  
+}
