@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 checkbox.addEventListener('change', actualizarListado);
 
                 const label = document.createElement('label');
+                label.classList.add('mr-2');
                 label.appendChild(checkbox);
                 label.appendChild(document.createTextNode(` ${evidenceName}`));
 
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const fantasmaVisible = selectedTests.every(test => evidencesFantasma.includes(test));
 
-                    resultado.push(`<p style="text-decoration: ${fantasmaVisible ? 'none' : 'line-through;'}">${nombreFantasma}</p>`);
+                    resultado.push(`<span class="mr-2" style="text-decoration: ${fantasmaVisible ? 'none' : 'line-through;'}">${nombreFantasma}</span>`);
                 }
 
                 if (resultado.length === 0) {
