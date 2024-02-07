@@ -1,5 +1,6 @@
 interface Ghost {
     evidences: string[];
+    extra?: string[]; // Hacer la propiedad 'extra' opcional
 }
 
 interface Ghosts {
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ghostForm = document.getElementById('ghostForm') as HTMLFormElement;
     const ghostList = document.getElementById('ghostList') as HTMLDivElement;
 
-    fetch('ghosts.json?vsfsfd')
+    fetch('ghosts.json?hgfd')
         .then(response => response.json())
         .then((data: { ghosts: Ghosts }) => {
             // Generar checkboxes desde las evidences disponibles en el JSON
@@ -18,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(data);
             Object.values(data.ghosts).forEach(ghost => {
                 ghost.evidences.forEach(prueba => availableEvidences.add(prueba));
+                if (ghost.extra) {
+                    ghost.extra.forEach(prueba => availableEvidences.add(prueba));
+                }
             });
 
             availableEvidences.forEach(evidenceName => {
@@ -28,10 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const label = document.createElement('label');
                 label.classList.add('mr-2');
+                label.classList.add('inline-block');
                 label.appendChild(checkbox);
                 label.appendChild(document.createTextNode(` ${evidenceName}`));
 
                 ghostForm.appendChild(label);
+                const hr = document.createElement('hr');
+                ghostList.appendChild(hr);
+
             });
 
             // Mostrar todos los fantasmas inicialmente
@@ -55,8 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 for (const [nombreFantasma, datosFantasma] of Object.entries(ghosts)) {
                     const evidencesFantasma = datosFantasma.evidences;
+                    const extraEvidencesFantasma = datosFantasma.extra || []; // Manejar el caso en que 'extra' pueda ser undefined
 
-                    const fantasmaVisible = selectedTests.every(test => evidencesFantasma.includes(test));
+                    const todasEvidencias = [...evidencesFantasma, ...extraEvidencesFantasma]; // Concatenar las evidencias y las extra
+
+                    const fantasmaVisible = selectedTests.every(test => todasEvidencias.includes(test));
 
                     resultado.push(`<label class="mr-2 inline-block" style="text-decoration: ${fantasmaVisible ? 'none' : 'line-through;'};color: ${fantasmaVisible ? 'none' : 'red;'} ">${nombreFantasma}</label>`);
                 }

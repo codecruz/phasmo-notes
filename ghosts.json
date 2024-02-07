@@ -5,6 +5,9 @@
         "D.O.T.S Projector",
         "Ghost Orb",
         "Ultraviolet"
+      ],
+      "extra": [
+        "Hight shout"
       ]
     },
     "Demon": {
@@ -136,7 +139,8 @@
       "evidences": [
         "Ultraviolet",
         "Freezing Temperatures",
-        "Spirit Box"
+        "Spirit Box",
+        "Ghost Orb"
       ]
     },
     "The Twins": {
