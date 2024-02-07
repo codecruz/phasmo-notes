@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const fantasmaVisible = selectedTests.every(test => evidencesFantasma.includes(test));
 
-                    resultado.push(`<span class="mr-2" style="text-decoration: ${fantasmaVisible ? 'none' : 'line-through;'}">${nombreFantasma}</span>`);
+                    resultado.push(`<label class="mr-2 inline-block" style="text-decoration: ${fantasmaVisible ? 'none' : 'line-through;'};color: ${fantasmaVisible ? 'none' : 'red;'} ">${nombreFantasma}</label>`);
                 }
 
                 if (resultado.length === 0) {

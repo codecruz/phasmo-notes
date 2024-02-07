@@ -5,22 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phasmonotes</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-    <h1>Phasmo-notes</h1>
+    <h1 class="text-3xl font-bold text-center my-8">Phasmo-notes</h1>
 
-    <form id="ghostForm">
-        <!-- Ghost's hints and events -->
-    </form>
+    <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+        <form id="ghostForm" class="bg-white p-4 rounded-lg shadow-md">
+            <!-- Ghost's hints and events -->
+            <h2 class="text-xl font-semibold mb-4">Ghost's Hints and Events</h2>
+            <p>Formulario de sugerencias y eventos del fantasma</p>
+        </form>
 
-    <div id="ghostList">
-        <!-- Ghost list -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Ghost List</h2>
+
+            <div id="ghostList">
+                <!-- Ghost list -->
+
+            </div>
+        </div>
     </div>
 
-    <script src="main.js?v=hhh" defer></script>
+    <script src="main.js?v=ggs" defer></script>
 </body>
 
 </html>
