@@ -10,7 +10,7 @@
     "Demon": {
       "evidences": [
         "Ghost Writing",
-        "Spirit Box",
+        "Ultraviolet",
         "Freezing Temperatures"
       ]
     },
@@ -45,7 +45,7 @@
     "Mare": {
       "evidences": [
         "Ghost Writing",
-        "Ultraviolet",
+        "Ghost Orb",
         "Spirit Box"
       ]
     },
@@ -53,7 +53,7 @@
       "evidences": [
         "Ghost Writing",
         "Ghost Orb",
-        "Spirit Box"
+        "Freezing Temperatures"
       ]
     },
     "Myling": {
@@ -72,86 +72,99 @@
     },
     "Oni": {
       "evidences": [
-        "DOTS",
+        "D.O.T.S Projector",
         "Spirit Box"
       ]
     },
     "Onryo": {
       "evidences": [
-        "DOTS",
+        "D.O.T.S Projector",
+        "Ghost Orb",
+        "Freezing Temperatures",
         "Spirit Box"
       ]
     },
     "Phantom": {
       "evidences": [
-        "DOTS",
+        "D.O.T.S Projector",
+        "Ultraviolet",
         "Spirit Box"
       ]
     },
     "Poltergeist": {
       "evidences": [
-        "DOTS",
+        "D.O.T.S Projector",
+        "Ultraviolet",
         "Spirit Box"
       ]
     },
     "Raiju": {
       "evidences": [
-        "DOTS",
-        "Spirit Box"
+        "D.O.T.S Projector",
+        "EMF Level 5",
+        "Ghost Orb"
       ]
     },
     "Revenant": {
       "evidences": [
-        "DOTS",
-        "Spirit Box"
+        "D.O.T.S Projector",
+        "Ghost Orb",
+        "Freezing Temperatures"
       ]
     },
     "Shade": {
       "evidences": [
-        "DOTS",
-        "Spirit Box"
+        "Ghost Writing",
+        "EMF Level 5",
+        "Freezing Temperatures"
       ]
     },
     "Spirit": {
       "evidences": [
-        "DOTS",
+        "D.O.T.S Projector",
         "Spirit Box"
       ]
     },
     "Thaye": {
       "evidences": [
-        "DOTS",
-        "Spirit Box"
+        "D.O.T.S Projector",
+        "Ghost Writing",
+        "Ghost Orb"
       ]
     },
     "The Mimic": {
       "evidences": [
-        "DOTS",
+        "Ultraviolet",
+        "Freezing Temperatures",
         "Spirit Box"
       ]
     },
     "The Twins": {
       "evidences": [
-        "DOTS",
+        "EMF Level 5",
+        "Freezing Temperatures",
         "Spirit Box"
       ]
     },
     "Wraith": {
       "evidences": [
-        "DOTS",
+        "D.O.T.S Projector",
+        "EMF Level 5",
         "Spirit Box"
       ]
     },
     "Yokai": {
       "evidences": [
-        "DOTS",
+        "D.O.T.S Projector",
+        "Ghost Orb",
         "Spirit Box"
       ]
     },
     "Yurei": {
       "evidences": [
-        "DOTS",
-        "Spirit Box"
+        "D.O.T.S Projector",
+        "Ghost Orb",
+        "Freezing Temperatures"
       ]
     }
   }
